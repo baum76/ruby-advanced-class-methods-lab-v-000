@@ -29,8 +29,8 @@ class Song
     s
   end
 
-  def
-
+  def self.find_by_name(string_song_name)
+    self.all.detect {|i| i.name == string_song_name}
   end
 
 
