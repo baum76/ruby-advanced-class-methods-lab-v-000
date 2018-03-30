@@ -35,9 +35,9 @@ class Song
     self.all.detect {|i| i.name == string_song_name}
   end
 
-  def self.find_or_create_by_name
-    find_by_name
-    create_by_name
+  def self.find_or_create_by_name(string_song_name)
+    # find_by_name
+    # create_by_name
   end
 
   def self.alphabetical
