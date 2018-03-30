@@ -58,7 +58,6 @@ class Song
     c.save
     c
   end
-  binding.pry
   def self.destroy_all
     self.all.clear
   end
