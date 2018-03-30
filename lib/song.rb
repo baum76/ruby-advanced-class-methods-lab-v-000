@@ -50,7 +50,8 @@ class Song
 
   def self.new_from_filename(mp3)
     c = self.new
-    c.name = mp3.split(/[^a-zA-Z\s] | \s-\s/)[0]
+    c.name = mp3.split(/[^a-zA-Z\s] | \s-\s/)[1]
+    c.artist_name = mp3.split (/[^a-zA-Z\s] | \s-\s/)[0]
     c
   end
 
@@ -63,8 +64,5 @@ class Song
 
   def self.destroy_all
     self.all.clear
-
   end
-
-
 end
